@@ -4,7 +4,7 @@
 
 Build a first-person interactive 3D desk for a public creative-developer portfolio. The planned scene includes editable corkboard notes, a flip calendar, clock, radio, interactive lamp, selectable window background, light and dark themes, an introductory camera animation, and bounded horizontal panning on mobile. Place credits and project information below the initial viewport.
 
-This is a product direction, not a claim that those features already exist. The app currently shows the Vite starter page.
+This is a product direction, not a claim that those features already exist. The app currently shows a minimal Lo-fi Nook placeholder.
 
 ## Current stack and layout
 
