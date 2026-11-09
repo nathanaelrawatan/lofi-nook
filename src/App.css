@@ -1,23 +1,64 @@
-.app {
+.scene {
+  position: relative;
+  height: 100svh;
+  min-height: 400px;
+  overflow: hidden;
+}
+
+.scene canvas {
+  display: block;
+}
+
+.scene-label {
+  position: absolute;
+  bottom: clamp(1.5rem, 4vw, 3rem);
+  left: clamp(1.5rem, 4vw, 3rem);
+  pointer-events: none;
+}
+
+.scene-label h1,
+.scene-label p,
+.project-info p {
+  margin: 0;
+}
+
+.scene-label h1 {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  letter-spacing: -0.04em;
+}
+
+.scene-label p {
+  color: #51473f;
+}
+
+.camera-gui {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+  max-height: calc(100svh - 2rem);
+  overflow-y: auto;
+}
+
+.item-label {
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  background: rgb(47 38 30 / 80%);
+  color: #fff;
+  font: 600 0.8rem/1.2 system-ui, sans-serif;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.scene-fallback {
+  position: absolute;
+  inset: 0;
   display: grid;
-  min-height: 100svh;
-  place-content: center;
-  gap: 0.75rem;
+  place-items: center;
   padding: 2rem;
   text-align: center;
 }
 
-.app h1,
-.app p {
-  margin: 0;
-}
-
-.app h1 {
-  font-size: clamp(2.5rem, 8vw, 5rem);
-  font-weight: 600;
-  letter-spacing: -0.05em;
-}
-
-.app p {
-  color: #665a50;
+.project-info {
+  padding: 3rem clamp(1.5rem, 4vw, 3rem);
 }

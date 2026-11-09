@@ -4,12 +4,12 @@
 
 Build a first-person interactive 3D desk for a public creative-developer portfolio. The planned scene includes editable corkboard notes, a flip calendar, clock, radio, interactive lamp, selectable window background, light and dark themes, an introductory camera animation, and bounded horizontal panning on mobile. Place credits and project information below the initial viewport.
 
-This is a product direction, not a claim that those features already exist. The app currently shows a minimal Lo-fi Nook placeholder.
+This is a product direction, not a claim that those features already exist. The app currently shows a 3D table and wall blockout with simple item stand-ins. Development controls adjust the camera and item transforms.
 
 ## Current stack and layout
 
 - React 19, TypeScript, and Vite. Three.js, React Three Fiber, Drei, GSAP, and Zustand are installed for features that need them.
-- `src/App.tsx` is the current app; `src/main.tsx` mounts it. `src/index.css` holds global styles; `src/App.css` holds page styles.
+- `src/App.tsx` contains the current scene and camera controls; `src/main.tsx` mounts it. `src/index.css` holds global styles; `src/App.css` holds page styles.
 - Import bundled assets from `src/assets/`. Put files that need a public URL in `public/`.
 - Use the existing package manager and lockfile (`npm` and `package-lock.json`).
 

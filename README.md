@@ -1,6 +1,12 @@
 # Lo-fi Interactive Desk
 
-A planned first-person interactive 3D desk experience for a creative-developer portfolio. The app currently shows a minimal Lo-fi Nook placeholder; the desk scene and interactions have not been implemented yet.
+A planned first-person interactive 3D desk experience for a creative-developer portfolio. The app currently shows a 3D desk layout blockout. The planned desk interactions have not been implemented yet.
+
+## Implemented so far
+
+- React Three Fiber canvas with a placeholder table, wall, floor, basic lighting, and labeled stand-ins for the lamp, corkboard, window, radio, flip calendar, and clock.
+- A fixed perspective camera starting at `(0, 2, 2.5)` and looking at `(0, 1.9, 0)` with a 45° field of view. In the development server, a lil-gui panel adjusts the camera and each item's position, size, and Y rotation. The panel is omitted from production builds; values reset on reload.
+- A WebGL fallback message and project information below the scene.
 
 ## Planned experience
 
@@ -26,10 +32,10 @@ In Windows PowerShell, use `npm.cmd` in place of `npm` if script execution polic
 
 ## Structure
 
-- `src/App.tsx`: current placeholder UI and app entry component.
+- `src/App.tsx`: current scene, camera setup controls, and app entry component.
 - `src/index.css` and `src/App.css`: global and page styles.
 - `src/assets/`: bundled images and other imported assets.
 - `public/`: files served at stable public URLs.
 - `AGENTS.md`: project direction and coding guidance for automated contributors.
 
-React Three Fiber, Drei, Three.js, GSAP, and Zustand are installed but are not yet used by the placeholder UI. There is no test runner or test suite yet. Architecture notes, performance measurements, and asset credits will be added as the corresponding features and assets are built.
+Three.js, React Three Fiber, and Drei render the current blockout. GSAP and Zustand are installed but not yet used. There is no test runner or test suite yet. Architecture notes, performance measurements, and asset credits will be added as the corresponding features and assets are built.
